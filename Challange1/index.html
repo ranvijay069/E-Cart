@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Smart Price Finder</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Smart Price Finder</h1>
+
+    <!-- Closest price search -->
+    <div class="box">
+      <h2>Find products around</h2>
+      <input type="number" id="targetPrice" placeholder="Enter price e.g. 70000" />
+      <button id="searchBtn">Search</button>
+    </div>
+
+    <!-- Range search (follow-up) -->
+    <div class="box">
+      <h2>Find products in this range</h2>
+      <input type="number" id="minPrice" placeholder="Min price" />
+      <input type="number" id="maxPrice" placeholder="Max price" />
+      <button id="rangeBtn">Find in Range</button>
+    </div>
+
+    <h2 id="resultTitle">Closest Products</h2>
+    <div class="cards" id="results"></div>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
